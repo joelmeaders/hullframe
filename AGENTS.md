@@ -12,7 +12,7 @@
 
 - Use Hullframe for the product name and `@joelmeaders/hullframe` for package imports.
 - Preserve public `t-*` element and event names, `T*` component and React wrapper names, `--t-*` CSS properties, and `.t-*` classes. Keep compatibility aliases when renaming other public symbols.
-- Keep the GitHub repository and GitHub Pages URLs at `terminalui` until their separate rename.
+- Use the Hullframe repository and GitHub Pages URLs in documentation and package metadata.
 
 ## Accessibility is a requirement
 

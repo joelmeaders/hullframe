@@ -6,9 +6,9 @@ Storybook is the component guide. It shows how to use each component, lets you t
 
 ## License
 
-Hullframe uses the [MIT License](LICENSE). The source is public on [GitHub](https://github.com/joelmeaders/terminalui). See [license guidance](docs/licensing.md). Third-party assets keep their own licenses in [icon credits](docs/icons.md).
+Hullframe uses the [MIT License](LICENSE). The source is public on [GitHub](https://github.com/joelmeaders/hullframe). See [license guidance](docs/licensing.md). Third-party assets keep their own licenses in [icon credits](docs/icons.md).
 
-Read the live [Storybook guide](https://joelmeaders.github.io/terminalui/). Changes to `main` deploy after the GitHub Actions checks pass.
+Read the live [Storybook guide](https://joelmeaders.github.io/hullframe/). Changes to `main` deploy after the GitHub Actions checks pass.
 
 ## Install from GitHub Packages
 
@@ -39,8 +39,6 @@ Update dependency declarations, package subpath imports, and copied browser scri
 The previous Vue and Angular helper names remain aliases of the new exports, and the legacy `dist/terminal.js` filename remains supported. Use the Hullframe names for new integrations and load only one library distribution per page.
 
 The public `t-*` element and event names, `T*` component and React wrapper names, `--t-*` CSS properties, and `.t-*` classes remain unchanged. Existing markup, styling, and event handlers still apply.
-
-The GitHub repository and live Storybook still use the `terminalui` URLs linked above. Their rename is a separate follow-up.
 
 ## Run locally
 

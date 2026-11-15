@@ -16,7 +16,7 @@ npm pack
 npm install /path/to/joelmeaders-hullframe-0.1.3.tgz
 ```
 
-When migrating from `@joelmeaders/terminalui`, replace the dependency and all import prefixes. The `t-*` elements and events, `T*` component and React wrapper names, and CSS names remain unchanged. See the [rename and migration notes](https://github.com/joelmeaders/terminalui#migrating-to-hullframe).
+When migrating from `@joelmeaders/terminalui`, replace the dependency and all import prefixes. The `t-*` elements and events, `T*` component and React wrapper names, and CSS names remain unchanged. See the [rename and migration notes](https://github.com/joelmeaders/hullframe#migrating-to-hullframe).
 
 Import the theme stylesheet once. Apply `data-theme="amber"` to `html` or a parent container.
 Import component modules before rendering their elements. Choose either the standalone bundle or component imports for a page. Both register the same element names, so do not use them together.
