@@ -13,7 +13,7 @@ Registry installation requires a published Hullframe release. Before the first p
 ```sh
 npm run build
 npm pack
-npm install /path/to/joelmeaders-hullframe-0.1.3.tgz
+npm install /path/to/joelmeaders-hullframe-0.1.4.tgz
 ```
 
 When migrating from `@joelmeaders/terminalui`, replace the dependency and all import prefixes. The `t-*` elements and events, `T*` component and React wrapper names, and CSS names remain unchanged. See the [rename and migration notes](https://github.com/joelmeaders/hullframe#migrating-to-hullframe).
