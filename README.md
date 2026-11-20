@@ -196,7 +196,7 @@ import '@joelmeaders/hullframe/components/button';
 import '@joelmeaders/hullframe/themes.css';
 ```
 
-The current version is `0.1.3`. To install a local copy in another repository, run `npm pack` here. This creates a tarball, an archive of the package. Then run `npm install /path/to/joelmeaders-hullframe-0.1.3.tgz` in the other repository. Importing the package root registers all 57 elements. Individual imports include only their component dependencies. Use one distribution path per page. Do not load the standalone bundle and ESM package together.
+The current version is `0.1.4`. To install a local copy in another repository, run `npm pack` here. This creates a tarball, an archive of the package. Then run `npm install /path/to/joelmeaders-hullframe-0.1.4.tgz` in the other repository. Importing the package root registers all 57 elements. Individual imports include only their component dependencies. Use one distribution path per page. Do not load the standalone bundle and ESM package together.
 
 The build also creates TypeScript declarations, a Custom Elements Manifest, a component catalog, and VS Code HTML metadata. Storybook reads the generated manifest. See [framework integration](docs/frameworks.md) for editor configuration and [release preparation](docs/releasing.md) for package verification and publication boundaries.
 
