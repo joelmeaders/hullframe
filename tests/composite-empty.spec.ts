@@ -28,9 +28,14 @@ for (const tag of ['t-tree', 't-menu', 't-combobox', 't-command-palette']) {
       await host.evaluate((element: TCommandPalette) => element.show());
     await host.evaluate(async (element: TTree) => element.updateComplete);
     if (tag === 't-menu') {
-      await expect(host.getByRole('group', { name: 'Available choices' })).toBeFocused();
+      const popup = host.getByRole('group', { name: 'Available choices' });
+      await expect(popup).toBeFocused();
       await expect(host.getByRole('button')).not.toHaveAttribute('aria-haspopup');
       await expect(host.getByRole('status')).toHaveText('No actions available.');
+      // Measure the final colors after the entrance fade.
+      await popup.evaluate((element) =>
+        Promise.all(element.getAnimations().map((animation) => animation.finished)),
+      );
     }
     if (tag === 't-combobox' || tag === 't-command-palette') {
       const search = host.getByRole('combobox');

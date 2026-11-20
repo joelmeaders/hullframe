@@ -1,15 +1,13 @@
 # Release preparation
 
-The [GitHub repository](https://github.com/joelmeaders/terminalui) is public. Hullframe uses the [MIT License](../LICENSE). Third-party assets retain their own terms in [icon credits](icons.md).
+The [GitHub repository](https://github.com/joelmeaders/hullframe) is public. Hullframe uses the [MIT License](../LICENSE). Third-party assets retain their own terms in [icon credits](icons.md).
 The package name is `@joelmeaders/hullframe`. Version tags publish to GitHub Packages after CI passes.
 
 ## Hullframe publication
 
-Hullframe replaces the Terminal Kit and Terminal UI product names. The package name changes from `@joelmeaders/terminalui` to `@joelmeaders/hullframe`, and the preferred standalone browser bundle changes from `dist/terminal.js` to `dist/hullframe.js`. The build also retains the previous standalone filename for compatibility. Public `t-*` APIs remain unchanged. See the [migration notes](https://github.com/joelmeaders/terminalui#migrating-to-hullframe) for the new framework helper names and their compatibility aliases.
+Hullframe replaces the Terminal Kit and Terminal UI product names. The package name changes from `@joelmeaders/terminalui` to `@joelmeaders/hullframe`, and the preferred standalone browser bundle changes from `dist/terminal.js` to `dist/hullframe.js`. The build also retains the previous standalone filename for compatibility. Public `t-*` APIs remain unchanged. See the [migration notes](https://github.com/joelmeaders/hullframe#migrating-to-hullframe) for the new framework helper names and their compatibility aliases.
 
 Changing the source does not publish the new package or redirect installations of the old package. Use a local package archive until a Hullframe release is published. For the first publication, follow the version-release steps below with a new version and tag; do not reuse an existing tag.
-
-The repository metadata and GitHub Pages location still use `terminalui`. Update those locations when the repository is renamed in a separate follow-up.
 
 ## Local verification
 
@@ -38,7 +36,7 @@ These budgets exclude theme CSS and fonts. Run `npm run size` for current measur
 Linux CI runs Oxlint, Prettier, types, behavior in three browsers, Storybook interactions, package installation, size, and site builds. Run `npm run lint` and `npm run format:check` locally for the same lint and format checks.
 Windows CI runs component visual checks in all three browsers and production screenshot comparisons against Windows baselines.
 Do not regenerate baselines to hide a defect. Review intended visual changes before accepting new images.
-On `main`, all browser jobs and the Windows job must pass before the built Storybook deploys to [GitHub Pages](https://joelmeaders.github.io/terminalui/). Pull requests run the checks without publishing.
+On `main`, all browser jobs and the Windows job must pass before the built Storybook deploys to [GitHub Pages](https://joelmeaders.github.io/hullframe/). Pull requests run the checks without publishing.
 
 ## Publish a version
 

@@ -5,10 +5,10 @@
   "description": "Terminal-inspired Lit components for the everyday web.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joelmeaders/terminalui.git"
+    "url": "git+https://github.com/joelmeaders/hullframe.git"
   },
-  "homepage": "https://joelmeaders.github.io/terminalui/",
-  "bugs": "https://github.com/joelmeaders/terminalui/issues",
+  "homepage": "https://joelmeaders.github.io/hullframe/",
+  "bugs": "https://github.com/joelmeaders/hullframe/issues",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"
